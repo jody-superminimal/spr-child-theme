@@ -1,9 +1,23 @@
 <?php 
 
-add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
-function enqueue_parent_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+// MUST BE 20 TO MAKE SURE WE LOAD PARENT STYLES FIRST
+add_action( 'wp_enqueue_scripts', 'spr_child_scripts', 20 );
+function spr_child_scripts() {
+//	wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+	
+	// Custom styles
+    wp_enqueue_style( 'custom-styles', get_stylesheet_directory_uri().'/custom.min.css' );
 }
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_stylesheet_directory() . '/template-tags.php';
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_stylesheet_directory() . '/template-functions.php';
 
 
 

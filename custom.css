@@ -1,1 +1,16 @@
 /* --- SASS vars --- */
+body {
+  color: #5A9797;
+}
+
+/* --- Utilities --- */
+.bg-blue {
+  background-color: #CFDFE4;
+}
+
+/* --- Header --- */
+#masthead {
+  background-color: rgba(207, 223, 228, 0.5);
+}
+
+/* --- END Header --- */

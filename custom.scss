@@ -1,1 +1,25 @@
 /* --- SASS vars --- */
+
+$blue: #CFDFE4; // duck-egg blue
+$light-blue: rgba(207, 223, 228, 0.5); // Same as blue but 50% opacity
+$green: #5A9797;
+body {
+    color: $green;
+}
+
+
+/* --- Utilities --- */
+
+.bg-blue {
+    background-color: $blue;
+}
+
+
+/* --- Header --- */
+
+#masthead {
+    background-color: $light-blue;
+}
+
+
+/* --- END Header --- */
