@@ -1,25 +1,59 @@
 /* --- SASS vars --- */
 
-$blue: #CFDFE4; // duck-egg blue
-$light-blue: rgba(207, 223, 228, 0.5); // Same as blue but 50% opacity
-$green: #5A9797;
+$dark: #242020;
+$light: #FCFCFC;
+$grey: #EEEEEE;
+$highlight: #FB5B75;
 body {
-    color: $green;
+    color: $dark;
 }
 
 
 /* --- Utilities --- */
 
-.bg-blue {
-    background-color: $blue;
+.bg-dark {
+    background-color: $dark;
+    color: $light;
+}
+
+.bg-grey {
+    background-color: $grey;
 }
 
 
 /* --- Header --- */
 
+#top-bar {
+    background-color: $light;
+}
+
 #masthead {
-    background-color: $light-blue;
+    background-color: $dark;
+    .custom-logo {
+        max-width: 110px;
+    }
+    hr {
+        display: none;
+    }
 }
 
 
 /* --- END Header --- */
+
+
+/* --- Nav --- */
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    color: $light;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $highlight;
+}
+
+
+/* --- END Nav --- */
