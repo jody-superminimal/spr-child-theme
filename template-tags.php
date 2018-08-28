@@ -34,11 +34,11 @@ function spr_do_top_bar() { ?>
 	<section id="top-bar" class="py-2 px-lg-4 d-flex align-items-center">
 		<div class="container-fluid">
 			<div class="row">
-			<!-- justify-content-md-end -->
 				<div class="col-12 text-right">
-					icons
+
 				</div>
 			</div>
 		</div>		
 	</section>
 <?php }
+

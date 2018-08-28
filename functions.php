@@ -5,6 +5,9 @@ add_action( 'wp_enqueue_scripts', 'spr_child_scripts', 20 );
 function spr_child_scripts() {
 //	wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 	
+
+	wp_enqueue_style('spr-child-fontello-icons', get_stylesheet_directory_uri() . "/assets/fontello/css/fontello.css");
+
 	// Custom styles
     wp_enqueue_style( 'custom-styles', get_stylesheet_directory_uri().'/custom.min.css' );
 }

@@ -1,3 +1,27 @@
+/* --- Breakpoints  
+xs = Extra small <576px
+sm = Small ≥576px
+md = Medium ≥768px
+lg = Large ≥992px
+xl = Extra large ≥1200px
+--- */
+
+
+/* --- Mixins --- */
+
+// eg @include active_links($green);
+@mixin active_links($color) {
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color !important;
+    }
+}
+
+
+/* --- END Mixins --- */
+
+
 /* --- SASS vars --- */
 
 $dark: #242020;
