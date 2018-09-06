@@ -15,21 +15,15 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<?php
+	while ( have_posts() ) :
+		the_post();
+		spr_do_header();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-			spr_do_header();
+		get_template_part( 'template-parts/content', 'page' );
 
-			get_template_part( 'template-parts/content', 'page' );
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	endwhile; // End of the loop.
+	?>
 
 <?php
 //get_sidebar();
